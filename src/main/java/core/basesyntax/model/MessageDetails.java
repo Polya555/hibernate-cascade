@@ -1,8 +1,12 @@
 package core.basesyntax.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import java.time.LocalDateTime;
 
+@Entity
 public class MessageDetails {
+    @Id
     private Long id;
     private String sender;
     private LocalDateTime sentTime;
